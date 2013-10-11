@@ -6,6 +6,8 @@ githubを用いてソーシャルコーディングを体得する．
 ## 作るもの
 ホームページ．随時変更アリ．
 
+参加してもらえる方はなにをプルリクしたら良いかわからないと思うので，Issuesにあるもののどれかをやってみましょう．
+
 ## やり方
 1. github(https://github.com/whitech0c0/practice_social_coding) Forkをクリック.  
 (自分のgithub上にフォークされます)   
