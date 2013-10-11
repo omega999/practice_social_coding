@@ -43,7 +43,7 @@ $ git checkout master
 
 2. リモート先を追加する
 ```sh
-$ git remote add upstream https://github.com/whitech0c0/practice_social_coding
+$ git remote add upstream git@github.com:whitech0c0/practice_social_coding.git
 ```
 3. 自分のローカルのmasterを最新にする
 ```sh
