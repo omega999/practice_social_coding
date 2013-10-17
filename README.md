@@ -4,7 +4,10 @@
 githubを用いてソーシャルコーディングを体得する．
 
 ## 作るもの
+### http://49.212.46.130/~whitech0c0/practice_social_coding/
 ホームページ．随時変更アリ．
+
+参加してもらえる方はなにをプルリクしたら良いかわからないと思うので，Issuesにあるもののどれかをやってみましょう．
 
 ## やり方
 1. github(https://github.com/whitech0c0/practice_social_coding) Forkをクリック.  
@@ -17,11 +20,15 @@ $ git clone https://github.com/[user_name]/practice_social_coding
 3. ブランチを作成
 ```sh
 $ cd practice_social_coding
+```
+```sh
 $ git checkout -b [branch_name]
 ```
 4. ファイル追加・修正・削除などしてから
 ```sh
 $ git add [file_name]
+```
+```sh
 $ git commit -m "[commit_message]"
 ```
 5. 自分のgithubリポジトリ(forkしたやつ)にpushする
@@ -41,9 +48,9 @@ $ git push origin [branch_name]
 $ git checkout master
 ```
 
-2. リモート先を追加する
+2. リモート先（本家）を追加する
 ```sh
-$ git remote add upstream https://github.com/whitech0c0/practice_social_coding
+$ git remote add upstream git@github.com:whitech0c0/practice_social_coding.git
 ```
 3. 自分のローカルのmasterを最新にする
 ```sh
@@ -54,13 +61,28 @@ $ git pull upstream master
 $ git push origin master
 ```
 
-※わざと失敗するのもありだと思います
-
-## 他の人のブランチを検証したいとき
-あとで書く
+この状態でブランチをつくると良いと思います．
 
 ## Pull Request が Merge されたあとですること
-あとで書く
+
+1. 自分のローカルリポジトリにある、master ブランチと Pull Requestしたブランチが古くなってるはずなので上の**注意**に書いてあることを確認＆実行しましょう
+
+2. もし本家のmasterが進んだのに、自分の作業ブランチが遅れたmasterを元にしてるというのは良くないのでbranch元をやり直すためにrebaseをしておきましょう
+```sh
+$ git checkout [branch_name]  
+```
+```sh
+$ git rebase master
+```
+
+3. ブランチを消してもよいとき（ブランチの役目が終わったとき）
+```sh
+$ git checkout master
+```
+```sh
+$ git branch -D [branch_name]
+```
+
 
 ## 約束ごと
 * 失敗を恐れない
