@@ -74,6 +74,13 @@ $ git checkout [branch_name]
 ```sh
 $ git rebase master
 ```
+※ rebaseはよくない場合がある。
+
+
+3. 2が良くない時。feature-branchに移動してmergeする(ローカルのmasterが最新の状態で)
+```sh
+$ git merge master
+```
 
 3. ブランチを消してもよいとき（ブランチの役目が終わったとき）
 ```sh
