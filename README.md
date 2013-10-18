@@ -106,9 +106,9 @@ $ git push origin shiritori
 ※しりとりを続けてcommitしたらpushするようにしましょう
 
 3. pull requestを送る場合
-whitech0c0:shiritori　←　ユーザー名:shiritori
-となるようにpull requestを送ること
-※masterに送るなどブランチを間違えないようにしましょう
+ whitech0c0:shiritori　←　ユーザー名:shiritori
+ となるようにpull requestを送ること
+ ※masterに送るなどブランチを間違えないようにしましょう
 
 4. 緊急時（なんかミスってshiritoriブランチを削除する場合）
 ```sh
