@@ -116,7 +116,7 @@ $ git checkout master
 $ git branch -d shiritori
 $ git push origin :shiritori
 ```
-これでローカルとリモートのshitiroriブランチを削除できる
+これでローカルとリモートのshiritoriブランチを削除できる
 
 ## 約束ごと
 * 失敗を恐れない
