@@ -90,6 +90,33 @@ $ git checkout master
 $ git branch -D [branch_name]
 ```
 
+## shiritoriを続ける場合
+
+1. ローカルリポジトリにshiritoriブランチの作成
+```sh
+$ git pull upstream shiritori
+$ git checkout shiritori
+```
+※最新のshiritoriブランチをpullするようにしましょう
+
+2. リモートリポジトリにshiritoriブランチの作成
+```sh
+$ git push origin shiritori
+``` 
+※しりとりを続けてcommitしたらpushするようにしましょう
+
+3. pull requestを送る場合
+whitech0c0:shiritori　←　ユーザー名:shiritori
+となるようにpull requestを送ること
+※masterに送るなどブランチを間違えないようにしましょう
+
+4. 緊急時（なんかミスってshiritoriブランチを削除する場合）
+```sh
+$ git checkout master
+$ git branch -d shiritori
+$ git push origin :shiritori
+```
+これでローカルとリモートのshitiroriブランチを削除できる
 
 ## 約束ごと
 * 失敗を恐れない
