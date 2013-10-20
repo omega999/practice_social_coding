@@ -94,8 +94,8 @@ $ git branch -D [branch_name]
 
 1. ローカルリポジトリにshiritoriブランチの作成
 ```sh
-$ git pull upstream shiritori
 $ git checkout shiritori
+$ git pull upstream shiritori
 ```
 ※最新のshiritoriブランチをpullするようにしましょう
 
